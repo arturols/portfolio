@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pluver Portafolio</title>
+  <link rel="stylesheet" href="/PORTAFOLIO/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/PORTAFOLIO/res/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="/PORTAFOLIO/res/PLUVER.png" alt="Logo" class="logo-nav">
+      <ul>
+        <li>Projects</li>
+        <li>Contact</li>
+        <li>About Us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Pluver</h2>
+        <h3>Projects Developed by Arturo Lopez Simental Pluver's Owner</h3>
+        <p>E-commerce, Fitness App, Blood Donors Web App</p>
+      </div>
+
+      <div class="container container-img">
+        <div class="image-wrapper">
+          <img src="/PORTAFOLIO/res/pluvlog.png" alt="Logo 1" class="fotoyo active" id="logo1">
+          <img src="/PORTAFOLIO/res/yo.jpg" alt="foto" class="fotoyo" id="yofoto">
+        </div>
+        <button class="btn-cambiar" onclick="intercambiar()"> > </button>
+      </div>
+    </section>
+
+    <section id="my-projects" class="my-projects">
+      <h2 class="h2pro">Projects</h2>
+
+      <!--proj 1-->
+      <div class="proyects">
+        <div class="proyecto-info">
+          <h3 id="e-commerce">Pluver E-commerce</h3>
+          <p>Products sold on Shopify</p>
+        </div>
+        <div class="proyectofoto">
+          <img src="/PORTAFOLIO/res/projects/plu.png" alt="Pluver" class="img-proj">
+        </div>
+      </div>
+
+      <!-- proj 2 -->
+      <div class="proyects">
+        <div class="proyecto-info">
+          <h3 id="fitness">BodeStat</h3>
+          <p>Fitness App</p>
+        </div>
+        <div class="proyectfoto">
+          <img src="/PORTAFOLIO/res/projects/bod.png" alt="BodeStat" class="img-proj">
+        </div>
+      </div>
+
+      <!-- proj 3 -->
+      <div class="proyects">
+        <div class="proyecto-info">
+          <h3 id="blood">Sangria</h3>
+          <p>Blood Donors Web App</p>
+        </div>
+        <div class="proyectofoto">
+          <img src="/PORTAFOLIO/res/projects/san.png" alt="Sangria" class="img-proj">
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact" class="contact">
+      <h2>Contact</h2>
+      <p>Contact me: arturolopezsimental81@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2026 Pluver - Arturo Lopez Simental</p>
+  </footer>
+
+  <script>
+    function intercambiar() {
+      const img1 = document.getElementById("logo1");
+      const img2 = document.getElementById("yofoto");
+      img1.classList.toggle("active");
+      img2.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
